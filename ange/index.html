@@ -228,7 +228,7 @@ details p{color:var(--mute);font-size:16px}
 
 <script>
 // À renseigner : lien de paiement et prix.
-const CHECKOUT_URL='';
+const CHECKOUT_URL='https://pay.kiwify.com/AL75ghK';
 document.querySelectorAll('[data-checkout]').forEach(a=>{ if(CHECKOUT_URL){a.href=CHECKOUT_URL;a.target='_blank';a.rel='noopener'} else a.addEventListener('click',e=>e.preventDefault()) });
 // Barre collante : visible après le premier bouton, masquée près de l'offre.
 const bar=document.getElementById('bar'),first=document.querySelector('.hero .cta'),offer=document.querySelector('.offer');
