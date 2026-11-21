@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prier chaque jour · Guide simple</title>
+<meta name="description" content="Un guide simple pour faire une place à la prière dans votre journée : quand prier, comment commencer, et quelques prières à lire.">
+<style>
+:root{--bg:#fbf8f2;--paper:#fff;--ink:#1f2433;--muted:#5f5a4e;--soft:#8a8372;--gold:#9a7431;--gold-l:#f4ead2;--line:#e8dfcc;--navy:#151b2d}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg)}
+body{color:var(--ink);font:17px/1.7 Georgia,"Times New Roman",serif;overflow-x:hidden}
+h1,h2,h3,p,ul,ol,blockquote,figure{margin:0}
+h1,h2,h3{color:var(--navy);font-weight:400;line-height:1.2;letter-spacing:-.02em;text-wrap:balance}
+h1{font-size:clamp(2.1rem,5.5vw,3.2rem)}
+h2{font-size:clamp(1.5rem,3.6vw,2rem);margin-bottom:14px}
+h3{font-size:1.18rem;margin-bottom:6px}
+a{color:var(--gold);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+.wrap{width:min(100% - 32px,760px);margin-inline:auto}
+.top{border-bottom:1px solid var(--line);background:var(--paper)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--navy);font-size:1.15rem;text-decoration:none}
+.brand span{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--navy);color:#f2cf75;font-size:.9rem}
+.top small{color:var(--soft);font-size:.78rem;text-align:right}
+.label{display:block;color:var(--gold);font:700 .74rem/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+.hero{padding:56px 0 40px;text-align:center}
+.hero .lead{max-width:600px;margin:18px auto 0;color:var(--muted);font-size:1.08rem}
+.meta{margin-top:18px;color:var(--soft);font-size:.85rem}
+.toc{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin:0 auto 8px}
+.toc strong{display:block;color:var(--soft);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.toc ol{padding-left:1.3em;font-size:.95rem}
+.toc li{padding:2px 0}
+section.block{padding:40px 0;border-bottom:1px solid var(--line)}
+section.block p+p{margin-top:14px}
+.muted{color:var(--muted)}
+blockquote{margin:22px 0;padding:16px 20px;border-left:3px solid var(--gold);background:var(--gold-l);border-radius:0 8px 8px 0;font-style:italic}
+blockquote cite{display:block;margin-top:6px;font:700 .75rem/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-style:normal;color:var(--gold);letter-spacing:.06em}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card p{color:var(--muted);font-size:.96rem}
+.steps{list-style:none;padding:0;margin-top:20px;counter-reset:s}
+.steps li{position:relative;padding:0 0 18px 52px;counter-increment:s}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--gold-l);color:var(--gold);font:700 .95rem -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+.steps p{color:var(--muted);font-size:.96rem}
+.prayer{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:22px 24px;margin-top:16px}
+.prayer h3{color:var(--gold)}
+.prayer p{font-style:italic}
+.tips{padding-left:1.2em;margin-top:14px}
+.tips li{padding:4px 0}
+.tips li::marker{color:var(--gold)}
+.faq details{padding:14px 0;border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;font-weight:700;color:var(--navy)}
+.faq p{margin-top:8px;color:var(--muted);font-size:.96rem}
+.offer{padding:48px 0 56px}
+.offer-box{background:var(--paper);border:1px solid var(--line);border-top:4px solid #d9ae52;border-radius:14px;padding:30px clamp(20px,5vw,40px);text-align:center}
+.offer-box .lead{max-width:540px;margin:10px auto 0;color:var(--muted)}
+.offer-box ul{list-style:none;padding:0;margin:20px auto;max-width:420px;text-align:left;font-size:.96rem}
+.offer-box li{padding:7px 0;border-bottom:1px solid var(--line)}
+.offer-box li::before{content:"✦";color:var(--gold);margin-right:9px}
+.price{font-size:2.8rem;line-height:1.1;color:var(--navy);margin-top:6px}
+.price small{display:block;font:.85rem/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--soft);margin-top:4px}
+.buy{display:inline-block;max-width:100%;margin-top:18px;padding:14px 28px;border-radius:30px;background:linear-gradient(125deg,#f4db91,#d9ae52);color:#221a0e;font:700 1rem/1.3 Georgia,serif;text-decoration:none;box-shadow:0 4px 14px #d9ae5233}
+.buy:hover{background:#f2cf75}
+.fine{margin-top:12px;color:var(--soft);font:.8rem/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+.fine a{color:inherit}
+.note{margin-top:28px;color:var(--soft);font:.85rem/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;text-align:center}
+footer{background:var(--paper);border-top:1px solid var(--line);padding:28px 0 36px;text-align:center;color:var(--soft);font:.82rem/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;margin-bottom:12px}
+footer nav a{color:var(--muted)}
+footer p+p{margin-top:6px}
+dialog{border:1px solid var(--line);border-radius:16px;padding:26px;max-width:420px;width:calc(100% - 40px);background:var(--bg);color:var(--ink)}
+dialog::backdrop{background:#151b2d88}
+dialog h3{margin-bottom:10px}
+dialog .buy{margin-top:14px;border:0;cursor:pointer}
+@media(max-width:600px){body{font-size:16px}.grid{grid-template-columns:1fr}.hero{padding:40px 0 28px}.buy{display:block;width:100%}.top small{max-width:130px}}
+</style>
+</head><body>
+
+<header class="top"><div class="wrap"><a class="brand" href="#"><span aria-hidden="true">✦</span>La Prière Sacrée</a><small class="sans">Guide de prière<br>Lecture libre</small></div></header>
+
+<main>
+  <div class="wrap">
+    <section class="hero">
+      <span class="label">Guide pratique</span>
+      <h1>Prier chaque jour, simplement</h1>
+      <p class="lead">Quelques minutes suffisent pour faire une place à la prière dans une journée chargée. Ce guide propose des repères simples : quand prier, comment commencer, et quelques prières à lire ou à reprendre avec vos propres mots.</p>
+      <p class="meta sans">Lecture : environ 6 minutes</p>
+    </section>
+
+    <nav class="toc sans" aria-label="Sommaire">
+      <strong>Dans ce guide</strong>
+      <ol>
+        <li><a href="#pourquoi">Pourquoi prendre un temps de prière</a></li>
+        <li><a href="#moments">Choisir son moment</a></li>
+        <li><a href="#methode">Une méthode en quatre temps</a></li>
+        <li><a href="#prieres">Trois prières à lire</a></li>
+        <li><a href="#conseils">Garder le rythme sans pression</a></li>
+        <li><a href="#questions">Questions fréquentes</a></li>
+      </ol>
+    </nav>
+
+    <section class="block" id="pourquoi">
+      <span class="label">1 · Le sens</span>
+      <h2>Pourquoi prendre un temps de prière</h2>
+      <p>La prière n’a pas besoin d’être longue ni parfaite. Pour beaucoup de croyants, c’est d’abord un moment pour s’arrêter, se tourner vers Dieu et regarder sa journée avec un peu plus de recul.</p>
+      <p>Les Évangiles montrent Jésus se retirant régulièrement à l’écart pour prier, souvent tôt le matin ou le soir. Cette habitude simple, un lieu calme et un moment choisi, reste une bonne manière de commencer.</p>
+      <blockquote>« Mais toi, quand tu pries, entre dans ta chambre, ferme ta porte, et prie ton Père qui est là dans le lieu secret. »<cite>Matthieu 6, 6</cite></blockquote>
+      <p class="muted">Ce guide propose des repères de pratique personnelle. Il ne remplace ni l’accompagnement d’une communauté ou d’un prêtre, ni l’aide d’un professionnel en cas de difficulté.</p>
+    </section>
+
+    <section class="block" id="moments">
+      <span class="label">2 · Le moment</span>
+      <h2>Choisir son moment</h2>
+      <p>Le meilleur moment est celui que vous pouvez tenir. Voici quatre repères courants :</p>
+      <div class="grid">
+        <article class="card"><h3>Au réveil</h3><p>Confier la journée qui commence, avant de regarder le téléphone ou les messages.</p></article>
+        <article class="card"><h3>Avant un repas</h3><p>Une phrase de gratitude, seul ou en famille. Moins d’une minute.</p></article>
+        <article class="card"><h3>Pendant un trajet</h3><p>Quelques mots intérieurs dans les transports ou en marchant.</p></article>
+        <article class="card"><h3>Le soir</h3><p>Relire la journée : ce qui a été donné, ce qui a été difficile, ce que l’on confie.</p></article>
+      </div>
+    </section>
+
+    <section class="block" id="methode">
+      <span class="label">3 · La méthode</span>
+      <h2>Une méthode en quatre temps</h2>
+      <p>Pour ceux qui ne savent pas par où commencer, cette structure tient en cinq minutes :</p>
+      <ol class="steps">
+        <li><h3>Faire silence</h3><p>Asseyez-vous, respirez calmement, et prenez conscience d’être en présence de Dieu. Trente secondes suffisent.</p></li>
+        <li><h3>Remercier</h3><p>Nommez une ou deux choses reçues aujourd’hui, même petites : une rencontre, un repas, un moment de calme.</p></li>
+        <li><h3>Confier</h3><p>Dites simplement ce qui vous préoccupe, pour vous ou pour un proche. Il n’y a pas de formule obligatoire.</p></li>
+        <li><h3>Choisir un pas</h3><p>Terminez par une intention concrète pour la journée : un appel à passer, une parole plus douce, un temps de repos.</p></li>
+      </ol>
+    </section>
+
+    <section class="block" id="prieres">
+      <span class="label">4 · À lire</span>
+      <h2>Trois prières à lire</h2>
+      <p>Vous pouvez les lire telles quelles ou vous en inspirer pour prier avec vos propres mots.</p>
+      <article class="prayer"><h3>Pour commencer la journée</h3><p>Seigneur, je te confie cette journée. Donne-moi un cœur attentif aux personnes que je vais croiser, la patience dans ce qui sera difficile, et la joie de reconnaître ce que tu me donnes. Amen.</p></article>
+      <article class="prayer"><h3>Dans un moment d’inquiétude</h3><p>Seigneur, tu connais ce qui m’inquiète. Je dépose devant toi ce que je ne peux pas porter seul. Aide-moi à faire ce qui dépend de moi et à te faire confiance pour le reste. Amen.</p></article>
+      <article class="prayer"><h3>Pour terminer la journée</h3><p>Merci, Seigneur, pour ce que j’ai reçu aujourd’hui. Pardonne-moi pour ce qui n’a pas été juste, et garde ceux que j’aime pendant cette nuit. Amen.</p></article>
+      <blockquote>« Ne vous inquiétez de rien ; mais en toute chose faites connaître vos besoins à Dieu par des prières et des supplications, avec des actions de grâces. »<cite>Philippiens 4, 6</cite></blockquote>
+    </section>
+
+    <section class="block" id="conseils">
+      <span class="label">5 · La durée</span>
+      <h2>Garder le rythme sans pression</h2>
+      <ul class="tips">
+        <li>Commencez petit : deux minutes chaque jour valent mieux qu’une heure une fois par mois.</li>
+        <li>Associez la prière à une habitude existante : le café du matin, le trajet, le coucher.</li>
+        <li>Gardez un carnet pour noter une phrase, une intention ou un remerciement.</li>
+        <li>Un jour sans prière n’efface rien. Reprenez simplement le lendemain.</li>
+        <li>Lisez un court passage biblique, par exemple un psaume ou un passage de l’Évangile du jour.</li>
+      </ul>
+    </section>
+
+    <section class="block faq" id="questions">
+      <span class="label">6 · Questions</span>
+      <h2>Questions fréquentes</h2>
+      <details><summary>Faut-il connaître des prières par cœur ?</summary><p>Non. Les prières traditionnelles, comme le Notre Père, sont un appui précieux, mais vous pouvez aussi parler simplement, avec vos propres mots.</p></details>
+      <details><summary>Combien de temps faut-il prier ?</summary><p>Il n’y a pas de durée minimale. Quelques minutes régulières suffisent pour installer une habitude.</p></details>
+      <details><summary>Et si je n’arrive pas à me concentrer ?</summary><p>C’est fréquent. Revenez doucement à une phrase simple, ou lisez une prière écrite à voix basse.</p></details>
+    </section>
+  </div>
+
+  <section class="offer" id="ressource" aria-labelledby="offre-titre">
+    <div class="wrap">
+      <div class="offer-box">
+        <span class="label">Pour aller plus loin · Facultatif</span>
+        <h2 id="offre-titre">La Prière Sacrée</h2>
+        <p class="lead">Si vous souhaitez être accompagné au quotidien, La Prière Sacrée réunit dans une application en ligne des prières, des lectures bibliques et des méditations guidées, à votre rythme.</p>
+        <ul class="sans">
+          <li>Le Manuscrit de Salomon</li>
+          <li>Le Code Royal — Le Cercle de la Clarté</li>
+          <li>Les enseignements hebdomadaires et le Codex de Poche</li>
+          <li>Les prières quotidiennes et les contenus bonus</li>
+          <li>Garantie de remboursement de 60 jours</li>
+        </ul>
+        <p class="price">27 €<small>Paiement unique · Sans abonnement · Accès numérique par e-mail</small></p>
+        <a class="buy" href="#ressource" data-checkout>Accéder à La Prière Sacrée — 27 €</a>
+        <p class="fine">Achat facultatif : ce guide reste entièrement gratuit. Paiement traité par Digistore24. Les éventuelles taxes et le montant final sont indiqués avant la confirmation du paiement.<br><a href="../offre-speciale/#pr-conditions">Conditions générales</a> · <a href="../offre-speciale/#pr-remboursement">Remboursement sous 60 jours</a></p>
+      </div>
+      <p class="note">Contenu de réflexion spirituelle. Aucun résultat médical, financier ou personnel n’est promis ni garanti.</p>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  <nav aria-label="Informations légales">
+    <a href="../offre-speciale/#pr-mentions">Mentions légales</a>
+    <a href="../offre-speciale/#pr-confidentialite">Confidentialité</a>
+    <a href="../offre-speciale/#pr-conditions">Conditions générales</a>
+    <a href="../offre-speciale/#pr-remboursement">Remboursement</a>
+    <a class="js-mail" href="#">Contact</a>
+  </nav>
+  <p>© 2026 52.971.069 L R A PAULA · CNPJ 52.971.069/0001-66</p>
+  <p>Assistance : <a class="js-mail" href="#" data-addr>lr.bussine [arobase] gmail.com</a> · Réponse sous 48 heures</p>
+</div></footer>
+
+<dialog aria-labelledby="dlg-title"><h3 id="dlg-title">Le paiement n’est pas encore disponible</h3><p>Pour toute question sur La Prière Sacrée, écrivez à <a class="js-mail" href="#" data-addr>lr.bussine [arobase] gmail.com</a>.</p><button class="buy" type="button">Fermer</button></dialog>
+
+<script data-cfasync="false">
+(function(){
+  // >>> Cole aqui a URL do checkout Digistore24 da oferta de 27 €.
+  var CHECKOUT_URL = "";
+  var m=['lr.bussine','gmail.com'].join(String.fromCharCode(64));
+  document.querySelectorAll('a.js-mail').forEach(function(a){if(a.hasAttribute('data-addr'))a.textContent=m;a.href='mai'+'lto:'+m;});
+  var dialog=document.querySelector('dialog');
+  document.querySelectorAll('[data-checkout]').forEach(function(a){
+    if(/^https:\/\//i.test(CHECKOUT_URL))a.href=CHECKOUT_URL;
+    else a.addEventListener('click',function(e){e.preventDefault();dialog.showModal();});
+  });
+  dialog.querySelector('button').addEventListener('click',function(){dialog.close();});
+})();
+</script>
+</body></html>
